@@ -1,0 +1,125 @@
+/* 聊天页面容器 */
+.ChatPage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+/* 头部 */
+.ChatPage__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.ChatPage__headerTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.ChatPage__headerSubtitle {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 4px;
+}
+
+/* 消息列表 */
+.ChatPage__messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  overflow-y: scroll;
+}
+
+/* 空状态 */
+.ChatPage__empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ChatPage__emptyIcon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.ChatPage__emptyText {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 8px;
+}
+
+.ChatPage__emptyHint {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* 消息气泡 */
+.ChatPage__message {
+  max-width: 80%;
+  padding: 12px 16px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+}
+
+.ChatPage__message--user {
+  align-self: flex-end;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.ChatPage__message--assistant {
+  align-self: flex-start;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.ChatPage__messageContent {
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 22px;
+}
+
+.ChatPage__messageContent--loading {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+
+/* 快捷消息区域 */
+.ChatPage__quickMessages {
+  padding: 16px;
+  padding-bottom: 32px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.ChatPage__quickMessagesTitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 12px;
+}
+
+.ChatPage__quickMessagesList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ChatPage__quickMessageItem {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 16px;
+  border-radius: 20px;
+}
+
+.ChatPage__quickMessageText {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+}

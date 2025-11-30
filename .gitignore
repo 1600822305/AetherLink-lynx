@@ -34,3 +34,6 @@ ios/DerivedData/
 web/node_modules/
 web/dist/
 web/build/
+
+# 参考项目（不上传）
+docs/参考项目/

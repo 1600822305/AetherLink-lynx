@@ -1,0 +1,156 @@
+/* 欢迎页面容器 */
+.WelcomePage {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* 背景渐变 */
+.WelcomePage__background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    #1a1a2e 0%,
+    #16213e 50%,
+    #0f3460 100%
+  );
+}
+
+/* 内容容器 */
+.WelcomePage__content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.WelcomePage__content--visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease;
+}
+
+/* Logo 区域 */
+.WelcomePage__logo {
+  margin-bottom: 32px;
+}
+
+.WelcomePage__logoIcon {
+  width: 100px;
+  height: 100px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 16px 40px rgba(102, 126, 234, 0.4);
+}
+
+.WelcomePage__logoText {
+  font-size: 48px;
+}
+
+/* 标题区域 */
+.WelcomePage__titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.WelcomePage__title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.WelcomePage__subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* 功能特点 */
+.WelcomePage__features {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 48px;
+  gap: 24px;
+}
+
+.WelcomePage__featureItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  min-width: 90px;
+}
+
+.WelcomePage__featureIcon {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.WelcomePage__featureText {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+/* 开始按钮 */
+.WelcomePage__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 16px 48px;
+  border-radius: 30px;
+  margin-bottom: 32px;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.35);
+}
+
+.WelcomePage__button--pressed {
+  transform: scale(0.96);
+  opacity: 0.9;
+}
+
+.WelcomePage__buttonText {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-right: 8px;
+}
+
+.WelcomePage__buttonIcon {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* 版本信息 */
+.WelcomePage__version {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  bottom: 24px;
+}
