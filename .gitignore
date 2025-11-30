@@ -1,0 +1,36 @@
+# Local
+.DS_Store
+*.local
+*.log*
+
+# Dist
+node_modules
+dist/
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# TypeScript
+*.tsbuildinfo
+
+# Android
+android/build/
+android/app/build/
+android/.gradle/
+android/local.properties
+*.apk
+*.aab
+
+# iOS
+ios/build/
+ios/Pods/
+ios/DerivedData/
+*.xcworkspace
+!ios/*.xcworkspace
+
+# Web
+web/node_modules/
+web/dist/
+web/build/

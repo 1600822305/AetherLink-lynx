@@ -1,0 +1,13 @@
+{
+  "appName": "aetherlink-lynxx",
+  "appId": "com.lynx.aetherlinklynxx",
+  "distDir": "dist",
+  "bundleName": "main.lynx.bundle",
+  "platforms": {
+    "android": {
+      "path": "android",
+      "added": "2025-11-30T02:09:34.348Z"
+    }
+  },
+  "created": "2025-11-30T02:08:58.636Z"
+}
